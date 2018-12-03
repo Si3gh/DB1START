@@ -48,4 +48,32 @@ public class TextoTeste {
 		System.out.println(tamanhoDoTexto);
 		Assert.assertEquals(8, tamanhoDoTexto);
 	}
+	/**/
+	@Test
+	public void deveRetornarPrimeirasQuatroLetras() {
+		Texto texto = new Texto();
+		String valorTexto = texto.primeiraQuatroLetras("João Pedro Broietti Pissolito");
+		System.out.println(valorTexto);
+		Assert.assertEquals("João", valorTexto);
+	}
+	/**/
+	@Test
+	public void deveRetornarTextoAPartirDaTerceiraLetra() {
+		Texto texto = new Texto();
+		String valorTexto = texto.aPartirDaTerceiraLetra("João Pedro Broietti Pissolito");
+		System.out.println(valorTexto);
+		Assert.assertEquals("ão Pedro Broietti Pissolito", valorTexto);
+	}
+	@Test
+	public void deveRetornarUltimasQuatroLetras() {
+		Texto texto = new Texto();
+		String valorTexto = texto.ultimasQuatroLetras("João Pedro Broietti Pissolito");
+		System.out.println(valorTexto);
+		Assert.assertEquals("lito", valorTexto);
+	}
+	
+	
+	
+	
+	
 }
