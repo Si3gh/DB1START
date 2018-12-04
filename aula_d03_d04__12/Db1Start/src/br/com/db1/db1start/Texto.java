@@ -76,6 +76,7 @@ public class Texto {
 		 for (int i = 0; i < texto.length(); i++) {
 			 newStr[--j] = texto.charAt(i);
 		  }
+		 //new StringBuilder(texto).reverse().toString();
 		 return new String(newStr);
 
 	}

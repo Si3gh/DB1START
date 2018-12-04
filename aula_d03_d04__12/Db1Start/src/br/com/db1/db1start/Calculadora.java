@@ -35,7 +35,7 @@ public class Calculadora {
 	
 	public Integer numeroImpares(int vInic) {
 		int quantidade=0;
-        for (int j = vInic; j < 100; j++) {
+        for (int j = vInic; j <= 100; j++) {
         	if (j%2 == 1) {
         		quantidade ++;
 			}

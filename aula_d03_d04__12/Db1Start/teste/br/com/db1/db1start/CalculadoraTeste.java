@@ -67,7 +67,7 @@ public class CalculadoraTeste {
 	public void deveDizerNumeroDeImparesAte100() {
 		Calculadora calculadora = new Calculadora();
 		int qntdImpares = calculadora.numeroImpares(1);
-		System.out.println("Qntd nmros Impares de 1 até 100:  "+ qntdImpares);
+		System.out.println("Qntd nmros Impares de 1 até 100: "+ qntdImpares);
 		Assert.assertEquals(50, qntdImpares);
 	}
 	
