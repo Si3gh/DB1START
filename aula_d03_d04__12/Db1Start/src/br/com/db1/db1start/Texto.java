@@ -38,6 +38,10 @@ public class Texto {
 		texto.substring(c);
 		
 		String newStr = str.concat( (texto.substring(c)) );
+		
+		//int indexEspaco = nome.indexOf(" ");
+		//String primeiroNome = nome.substring(0, indexEspaco);
+		//return nome.replace(primeiroNome,"Aluno");
 		return newStr;
 
 	}

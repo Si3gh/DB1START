@@ -85,7 +85,7 @@ public class TextoTeste {
 		Texto texto = new Texto();
 		String[] textoSeparado = texto.separaTextoComVirgula("banana, maçã, melancia");
 		String[] textoEsperado = {"banana", " maçã", " melancia"};
-		System.out.println("Texto -sem virgula -sOutput");
+		//System.out.println("Texto -sem virgula -sOutput");
 		Assert.assertArrayEquals(textoSeparado,textoEsperado);
 	}
 	
