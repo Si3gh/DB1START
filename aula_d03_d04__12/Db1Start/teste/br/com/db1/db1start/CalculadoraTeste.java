@@ -87,4 +87,19 @@ public class CalculadoraTeste {
 		Assert.assertEquals(50.10, menorValor,0.0);
 	}
 	
+	@Test
+	public void deveRetornarMediaDouble() {
+		Calculadora calculadora = new Calculadora();
+		double media = calculadora.mediaDouble(10.0, 10.0, 10.0);
+		System.out.println("Media: " + media);
+		Assert.assertEquals(10.0, media,0.0);
+	}
+	
+	@Test 
+	public void deveRetornarAreaTriangulo() {
+		Calculadora calculadora = new Calculadora();
+		double areaTriangulo = calculadora.areaTriangulo(10.00, 10.00);
+		System.out.println("Menor valor double é: " + areaTriangulo);
+		Assert.assertEquals(50.00, areaTriangulo,0.0);
+	}
 }

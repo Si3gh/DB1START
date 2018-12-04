@@ -54,4 +54,11 @@ public class Calculadora {
 	     return  num3 < (num1 < num2 ? num1:num2) ? num3:(num1 < num2 ? num1:num2);
 	}
 			
+	public double mediaDouble(double num1, double num2, double num3) {
+		return (num1 + num2 + num3) / 3;
+	}
+	
+	public double areaTriangulo(double base, double altura) {
+		return base * altura / 2;	
+	}
 }
