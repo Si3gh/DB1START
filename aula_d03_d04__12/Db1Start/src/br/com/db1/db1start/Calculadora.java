@@ -42,5 +42,16 @@ public class Calculadora {
 		}
         return quantidade;
 	}
+	public double menorValorDouble(double valor1, double valor2) {
+		// double maiorValor;
+	    // maiorValor = valor1 > valor2 ?valor1: valor2;
+	     return valor1 < valor2 ?valor1: valor2;
+	}
+	
+	public double menorValorDouble(double num1, double num2, double num3) {
+		// double maiorValor;
+	    // maiorValor = valor1 > valor2 ?valor1: valor2;
+	     return  num3 < (num1 < num2 ? num1:num2) ? num3:(num1 < num2 ? num1:num2);
+	}
 			
 }

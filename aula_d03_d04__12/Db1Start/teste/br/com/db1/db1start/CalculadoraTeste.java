@@ -52,7 +52,7 @@ public class CalculadoraTeste {
 		Calculadora calculadora = new Calculadora();
 		boolean valorEhPar = calculadora.ehPar(28);
 		System.out.println(valorEhPar);
-		
+	
 		Assert.assertTrue(valorEhPar);
 	}
 	
@@ -69,6 +69,22 @@ public class CalculadoraTeste {
 		int qntdImpares = calculadora.numeroImpares(1);
 		System.out.println("Qntd nmros Impares de 1 até 100:  "+ qntdImpares);
 		Assert.assertEquals(50, qntdImpares);
+	}
+	
+	@Test 
+	public void deveDizerMenorNumeroDouble() {
+		Calculadora calculadora = new Calculadora();
+		double menorValor = calculadora.menorValorDouble(50.20, 50.50);
+		System.out.println("Menor valor double é: " + menorValor);
+		Assert.assertEquals(50.20, menorValor,0.0);
+	}
+	
+	@Test
+	public void deveDizerMenorNumeroDouble2() {
+		Calculadora calculadora = new Calculadora();
+		double menorValor = calculadora.menorValorDouble(50.10, 50.50, 50.60);
+		System.out.println("Menor valor double é: " + menorValor);
+		Assert.assertEquals(50.10, menorValor,0.0);
 	}
 	
 }

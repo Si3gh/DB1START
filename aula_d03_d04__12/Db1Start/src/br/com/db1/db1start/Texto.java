@@ -42,5 +42,41 @@ public class Texto {
 
 	}
 	
+	public String[] separaTextoComVirgula(String texto) {
+		String[] textoArray = new String[5];
+		textoArray = texto.split(",");
+		//Remove white space 
+		//String[] textoArray = texto.split("\\s*,\\s*");
+		return textoArray; 
+	}
+	
+	public Integer contaVogal(String texto) {
+		int c = 0;
+		for(int i=0;i<texto.length();i++)
+        {
+            char ch=texto.charAt(i);
+           
+            if((ch=='a')||(ch=='A')||(ch=='e')||(ch=='E')||(ch=='i')||
+               (ch=='I')||(ch=='o')||(ch=='O')||(ch=='u')||(ch=='U'))
+            	
+            	c++;
+        }
+        return c ;
+	}
+	
+	public String inverteString(String texto) {
+		
+		 int j = texto.length();
+		 char[] newStr = new char[j];
+		 
+		 for (int i = 0; i < texto.length(); i++) {
+			 newStr[--j] = texto.charAt(i);
+		  }
+		 return new String(newStr);
+
+	}
+	
+	
+	
 	
 }

@@ -80,8 +80,30 @@ public class TextoTeste {
 		Assert.assertEquals("Aluno Pedro Broietti Pissolito", valorTexto);
 	}
 	
+	@Test
+	public void deveRetornarStringSemVirgula() {
+		Texto texto = new Texto();
+		String[] textoSeparado = texto.separaTextoComVirgula("banana, maçã, melancia");
+		String[] textoEsperado = {"banana", " maçã", " melancia"};
+		System.out.println("Texto -sem virgula -sOutput");
+		Assert.assertArrayEquals(textoSeparado,textoEsperado);
+	}
 	
+	@Test
+	public void deveRetornarQntdVogais() {
+		Texto texto = new Texto();
+		int qntdVogais =texto.contaVogal("Abacaxi") ;
+		System.out.println(qntdVogais);
+		Assert.assertEquals(4, qntdVogais);
+	}
 	
+	@Test
+	
+	public void deveRetornarStringInvertida() {
+		Texto texto = new Texto();
+		String strInvertida = texto.inverteString("awar") ;
+		Assert.assertEquals("rawa", strInvertida);
+	}
 	
 	
 }
