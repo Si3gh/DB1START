@@ -12,9 +12,9 @@ public class Texto {
 	public Integer tamanhoTexto(String texto) {
 		return texto.length();
 	}
-	public Integer tamanhoTextoEspacoso(String texto) {
+	/*public Integer tamanhoTextoEspacoso(String texto) {
 		return texto.length();
-	}
+	}*/
 	public Integer tamanhoTextoSemEspaco(String texto) {
 		texto = texto.replaceAll(" ", "");
 		return texto.length();

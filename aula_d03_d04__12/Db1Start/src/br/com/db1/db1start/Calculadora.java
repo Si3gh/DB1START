@@ -26,10 +26,8 @@ public class Calculadora {
 	}
 	
 	public Integer maiorNumero(int valorA, int valorB) {
-        int valorEscolhido;
         // Aqui o maior valor é o valorA = 20
-        valorEscolhido = valorA > valorB ?valorA: valorB;
-       return valorEscolhido;
+       return  valorA > valorB ?valorA: valorB; 
     
 	}
 	
@@ -45,7 +43,7 @@ public class Calculadora {
 	public double menorValorDouble(double valor1, double valor2) {
 		// double maiorValor;
 	    // maiorValor = valor1 > valor2 ?valor1: valor2;
-	     return valor1 < valor2 ?valor1: valor2;
+	    return valor1 < valor2 ?valor1: valor2;
 	}
 	
 	public double menorValorDouble(double num1, double num2, double num3) {
