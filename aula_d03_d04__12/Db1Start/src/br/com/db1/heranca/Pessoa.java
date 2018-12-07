@@ -1,13 +1,13 @@
-package br.com.db1.db1start;
+package br.com.db1.heranca;
 
 import java.util.Date;
-//import java.util.List;
+import java.util.List;
 
 public abstract class Pessoa {
 	private String nome;
 	private Date dataNascimento;
 	private Double peso;
-	//List <Endereco> enderecos;
+	List <Endereco> enderecos;
 	//Recibo recibo 2 = new Recibo(pessoa);
 	/*Teste
 	 * Feijoada feijoada = 
